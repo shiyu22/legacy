@@ -284,9 +284,9 @@ var Request = {
 				primary: true,
 				dataType: "json",
 				url: query === "smiles" ?//use URL parameter for SMILES
-					"http://192.168.1.58:5000/api/v1/search?Molecular="
+					"http://192.168.1.58:35001/api/v1/search?Molecular="
 						+ value +"&Type=" + type:
-					"http://192.168.1.58:5000/api/v1/search?Cid="
+					"http://192.168.1.58:35001/api/v1/search?Cid="
 						+ value +"&Type=" + type,
 				/*
 				url: query === "smiles" ?//use URL parameter for SMILES
