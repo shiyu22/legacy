@@ -70,7 +70,7 @@ Query parameters:
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 
 		<link rel="shortcut icon" href="favicon-32x32.png" />
-		<?php echo "<title>".$metadata["title"]."</title>"; ?>
+		<title>MolSearch</title>
 		<meta name="author" content="Herman Bergwerf" />
 		<meta name="keywords" <?php echo 'content="'.$metadata["keywords"].'"' ?> />
 
@@ -511,7 +511,7 @@ Query parameters:
 				<div id="dialog-wrapper">
 					<div class="dialog" id="start-dialog">
 						<img id="welcome-logo" src="img/logo.svg" style="width: 244px" alt="" />
-						<h2 style="font-size: 40px;color:#000">Project Name</h2>
+						<h2 style="font-size: 40px;color:#000">MolSearch</h2>
 						<div id="welcome-loading-msg" style="font-size:20px">LOADING&hellip;</div>
 						<div id="welcome-button-bar" class="btn-group" style="display: none;">
 							<button class="btn close btn-large btn-primary" >Close</button>
