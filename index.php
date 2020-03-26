@@ -223,7 +223,15 @@ Query parameters:
 							<li class="menu-item"><a id="action-data-infocard">Information card</a></li>
 							<li class="menu-item"><a id="action-data-spectra">Spectroscopy</a></li>
 							<li class="menu-item"><a id="model-source" class="disabled" target="_blank">3D model source</a></li>
-							<li class="menu-header">Advanced search</li>
+							<!-- <li class="menu-header">Advanced search</li>
+							<li class="menu-item"><a id="action-search-similarity">Similarity</a></li>
+							<li class="menu-item"><a id="action-search-substructure">Substructure</a></li>
+							<li class="menu-item"><a id="action-search-superstructure">Superstructure</a></li> -->
+						</ul>
+					</li>	
+					<li class="dropdown">
+						<a class="dropdown-toggle">Search</a>
+						<ul class="dropdown-menu">
 							<li class="menu-item"><a id="action-search-similarity">Similarity</a></li>
 							<li class="menu-item"><a id="action-search-substructure">Substructure</a></li>
 							<li class="menu-item"><a id="action-search-superstructure">Superstructure</a></li>
@@ -291,6 +299,7 @@ Query parameters:
 							<li class="menu-item"><a id="action-jmol-measure-torsion" class="jmol-script jmol-picking radio">Torsion</a></li>
 						</ul>
 					</li>
+					<li style="font-weight: bold; position:absolute; right: 20px"><a id="action-help">?</a></li>
 				</ul>
 			</div>
 		</div>
@@ -503,7 +512,7 @@ Query parameters:
 				<div id="dialog-wrapper">
 					<div class="dialog" id="start-dialog">
 						<img id="welcome-logo" src="img/logo.svg" style="width: 244px" alt="" />
-						<h2 style="font-size: 40px;color:#000">MolSearch</h2>
+						<h2 style="font-size: 16px;color:#60606F">An open source project powered by Milvus.</h2>
 						<div id="welcome-loading-msg" style="font-size:20px">LOADING&hellip;</div>
 						<div id="welcome-button-bar" class="btn-group" style="display: none;">
 							<button class="btn close btn-large btn-primary" >Close</button>
@@ -596,8 +605,8 @@ Query parameters:
 								echo '<div class="alert-bar alert-danger" style="margin-bottom: 20px;"><b>Important!</b> you can slide toolbars which don\'t fit in your screen.</div>';
 							}
 						?>
-						<p>Download PDF: <a class="link" href="docs/manual.pdf" target="_blank">docs/manual.pdf</a></p>
-						<p>Click one of the subjects below to learn more. You can also watch some videos on <a class="link" target="_blank" title="YouTube Channel" href="https://www.youtube.com/channel/UCRP9nXCC59TMlqc-bk1mi3A">YouTube</a> to get started.</p>
+						<!-- <p>Download PDF: <a class="link" href="docs/manual.pdf" target="_blank">docs/manual.pdf</a></p>
+						<p>Click one of the subjects below to learn more. You can also watch some videos on <a class="link" target="_blank" title="YouTube Channel" href="https://www.youtube.com/channel/UCRP9nXCC59TMlqc-bk1mi3A">YouTube</a> to get started.</p> -->
 						<h3>Subjects</h3>
 						<div class="expandable">
 							<div class="expandable-title"><span>Drawing structural formulas</span></div>
@@ -728,7 +737,7 @@ Query parameters:
 								</ol>
 							</div>
 						</div>
-						<div class="expandable">
+						<!-- <div class="expandable">
 							<div class="expandable-title"><span>Protein display</span></div>
 							<div class="expandable-content">
 								<p>The <b>Protein</b> menu offers a number of protein display settings including different color schemes and different chain representations.</p>
@@ -753,7 +762,7 @@ Query parameters:
 									<li><b>B-factor:</b> blue for low B-factor and red for high B-factor <i>(if provided)</i></li>
 								</ol>
 							</div>
-						</div>
+						</div> -->
 						<div class="expandable">
 							<div class="expandable-title"><span>Advanced Jmol tools</span></div>
 							<div class="expandable-content">
@@ -781,7 +790,7 @@ Query parameters:
 								<p>Note that in some cases, the resolved 3D model is only an approach of the real molecule, this means you have to execute an <b>Energy minimization</b> in order to do reliable measurements.</p>
 							</div>
 						</div>
-						<p>
+						<!-- <p>
 							If you still have questions, found bugs or want to request new features. You can discuss them with me via social media or send me an email.
 							<ul>
 								<li>Twitter: <a class="link" target="_blank" title="Twitter page" href="https://twitter.com/molview">@molview</a></li>
@@ -789,7 +798,7 @@ Query parameters:
 								<li>Google Plus: <a class="link" target="_blank" title="Google+ page" href="https://google.com/+MolViewOrganization" rel="publisher">+MolView</a></li>
 								<li>Mail: <a class="link" target="_blank" title="Mail adress" href="mailto:support@molview.org">support@molview.org</a></li>
 							</ul>
-						</p>
+						</p> -->
 						<div class="footer">
 							<button class="btn close btn-primary">Close</button>
 						</div>
