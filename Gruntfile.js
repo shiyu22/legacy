@@ -104,8 +104,7 @@ var JSUnits = {
 	}
 }
 
-module.exports = function(grunt)
-{
+module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		clean: ['build', 'img'],
@@ -184,7 +183,7 @@ module.exports = function(grunt)
 				src: 'build/*.min.js',
 				dest: 'build/',
 				replacements: [{ from: '"use strict";', to: '' }]
-    		}
+			}
 		},
 		less:
 		{
@@ -339,6 +338,8 @@ module.exports = function(grunt)
 					{ expand: true, flatten: true, src: 'docs/img/*', dest: 'img/help/', filter: 'isFile' },
 					{ src: 'src/svg/icon/agpl.svg', dest: 'img/agpl.svg' },
 					{ src: 'src/svg/icon/48.svg', dest: 'img/logo.svg' },
+					{ src: 'src/svg/icon/loading.svg', dest: 'img/loading.svg' },
+					{ src: 'src/svg/icon/arrow-right.svg', dest: 'img/arrow-right.svg' },
 					{ src: 'src/svg/icon/brand.svg', dest: 'img/brand.svg' }
 				]
 			}
