@@ -371,7 +371,7 @@ Query parameters:
 								<div id="action-mp-skeletal-formula" class="tool-button tool-button-horizontal enabled" title="Toggle skeletal formula">skeleton</div>
 								<div id="action-mp-center" class="tool-button tool-button-horizontal" title="Center structure">Center</div>
 								<div class="horizontal-separator"></div>
-								<div id="action-mp-clean" class="tool-button tool-button-horizontal" title="Clean structure">Clean structure</div>
+								<div id="action-mp-clean" class="tool-button tool-button-horizontal" title="Clean structure">Clean</div>
 								<div id="action-resolve" class="tool-button tool-button-horizontal" title="Update 3D view">to 3D</div>
 							</div>
 						</div>
