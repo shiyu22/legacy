@@ -209,6 +209,14 @@ Query parameters:
 							<li class="menu-item"><a id="action-about">About</a></li> -->
 						</ul>
 					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle">Search</a>
+						<ul class="dropdown-menu">
+							<li class="menu-item"><a id="action-search-similarity">Similarity</a></li>
+							<li class="menu-item"><a id="action-search-substructure">Substructure</a></li>
+							<li class="menu-item"><a id="action-search-superstructure">Superstructure</a></li>
+						</ul>
+					</li>
 					<li id="tools-dropdown" class="dropdown">
 						<a class="dropdown-toggle">Tools</a>
 						<ul class="dropdown-menu">
@@ -229,14 +237,7 @@ Query parameters:
 							<li class="menu-item"><a id="action-search-superstructure">Superstructure</a></li> -->
 						</ul>
 					</li>	
-					<li class="dropdown">
-						<a class="dropdown-toggle">Search</a>
-						<ul class="dropdown-menu">
-							<li class="menu-item"><a id="action-search-similarity">Similarity</a></li>
-							<li class="menu-item"><a id="action-search-substructure">Substructure</a></li>
-							<li class="menu-item"><a id="action-search-superstructure">Superstructure</a></li>
-						</ul>
-					</li>
+				
 					<li id="model-dropdown" class="dropdown">
 						<a class="dropdown-toggle">Model</a>
 						<ul class="dropdown-menu">
@@ -370,7 +371,7 @@ Query parameters:
 								<div id="action-mp-skeletal-formula" class="tool-button tool-button-horizontal enabled" title="Toggle skeletal formula">skeleton</div>
 								<div id="action-mp-center" class="tool-button tool-button-horizontal" title="Center structure">Center</div>
 								<div class="horizontal-separator"></div>
-								<div id="action-mp-clean" class="tool-button tool-button-horizontal" title="Clean structure">Clean structure</div>
+								<div id="action-mp-clean" class="tool-button tool-button-horizontal" title="Clean structure">Clean</div>
 								<div id="action-resolve" class="tool-button tool-button-horizontal" title="Update 3D view">to 3D</div>
 							</div>
 						</div>
