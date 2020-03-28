@@ -325,6 +325,7 @@ var Autocomplete = {
 		for(var i = 0; i < records.length; i++)
 		{
 			var li = $('<li class="autocomplete-item"></li>');
+			var append = false
 
 			if(records[i].label.toLowerCase().indexOf(text) === 0)
 			{
@@ -349,6 +350,7 @@ var Autocomplete = {
 			}
 			else//PubChem compound
 			{
+				append = true
 				li.addClass("autocomplete-pubchem");
 				$('<span class="autocomplete-type"></span>').html("Compound").appendTo(li);
 			}
@@ -362,7 +364,10 @@ var Autocomplete = {
 				Autocomplete.submit();
 			});
 
-			ul.append(li);
+			if(append){
+				ul.append(li);
+			}
+			
 		}
 
 		$("#autocomplete-dropdown").append(ul);
@@ -485,3 +490,4 @@ var Autocomplete = {
 		});
 	}
 }
+

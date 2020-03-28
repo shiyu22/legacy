@@ -403,7 +403,7 @@ var MolView = {
 	 */
 	pushEvent: function(category, action, label, number)
 	{
-		ga("send", "event", category, action, label, number);
+		//ga("send", "event", category, action, label, number);
 	},
 
 	/**
