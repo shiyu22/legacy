@@ -209,6 +209,14 @@ Query parameters:
 							<li class="menu-item"><a id="action-about">About</a></li> -->
 						</ul>
 					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle">Search</a>
+						<ul class="dropdown-menu">
+							<li class="menu-item"><a id="action-search-similarity">Similarity</a></li>
+							<li class="menu-item"><a id="action-search-substructure">Substructure</a></li>
+							<li class="menu-item"><a id="action-search-superstructure">Superstructure</a></li>
+						</ul>
+					</li>
 					<li id="tools-dropdown" class="dropdown">
 						<a class="dropdown-toggle">Tools</a>
 						<ul class="dropdown-menu">
@@ -229,14 +237,7 @@ Query parameters:
 							<li class="menu-item"><a id="action-search-superstructure">Superstructure</a></li> -->
 						</ul>
 					</li>	
-					<li class="dropdown">
-						<a class="dropdown-toggle">Search</a>
-						<ul class="dropdown-menu">
-							<li class="menu-item"><a id="action-search-similarity">Similarity</a></li>
-							<li class="menu-item"><a id="action-search-substructure">Substructure</a></li>
-							<li class="menu-item"><a id="action-search-superstructure">Superstructure</a></li>
-						</ul>
-					</li>
+				
 					<li id="model-dropdown" class="dropdown">
 						<a class="dropdown-toggle">Model</a>
 						<ul class="dropdown-menu">
