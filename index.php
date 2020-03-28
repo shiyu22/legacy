@@ -170,7 +170,7 @@ Query parameters:
 						<button><i class="fa fa-search" style="color:#B0B0B9"></i></button>
 						<input id="search-input" name="q" type="text" autocomplete="off" spellcheck="false" />
 						<!-- <div class="input-focus"></div> -->
-						<div id="search-dropdown" class="dropdown">
+						<!-- <div id="search-dropdown" class="dropdown">
 							<a class="dropdown-toggle"></a>
 							<ul class="dropdown-menu dropdown-left">
 								<li class="menu-item"><a id="action-show-search-layer">Show 2last search results</a></li>
@@ -179,7 +179,7 @@ Query parameters:
 								<li class="menu-item"><a id="action-search-rcsb">RCSB Protein Data Bank</a></li>
 								<li class="menu-item"><a id="action-search-cod">Crystallography Open Database</a></li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 				</form>
 				<ul id="main-menu" class="hstack">
@@ -212,17 +212,17 @@ Query parameters:
 					<li id="tools-dropdown" class="dropdown">
 						<a class="dropdown-toggle">Tools</a>
 						<ul class="dropdown-menu">
-							<li class="menu-header">Link</li>
 							<!-- <li class="menu-item"><a id="action-share">Share</a></li> -->
-							<li class="menu-item"><a id="action-embed">Embed</a></li>
 							<li class="menu-header">Export</li>
 							<li class="menu-item"><a id="action-export-sketcher-png">Structural formula image</a></li>
 							<li class="menu-item"><a id="action-export-model-png">3D model image</a></li>
 							<li class="menu-item"><a id="action-export-model">MOL file</a></li>
 							<li class="menu-header">Chemical data</li>
 							<li class="menu-item"><a id="action-data-infocard">Information card</a></li>
-							<li class="menu-item"><a id="action-data-spectra">Spectroscopy</a></li>
-							<li class="menu-item"><a id="model-source" class="disabled" target="_blank">3D model source</a></li>
+							<!-- <li class="menu-item"><a id="action-data-spectra">Spectroscopy</a></li>
+							<li class="menu-header">Link</li>
+							<li class="menu-item"><a id="action-embed">Embed</a></li>
+							<li class="menu-item"><a id="model-source" class="disabled" target="_blank">3D model source</a></li> -->
 							<!-- <li class="menu-header">Advanced search</li>
 							<li class="menu-item"><a id="action-search-similarity">Similarity</a></li>
 							<li class="menu-item"><a id="action-search-substructure">Substructure</a></li>
@@ -255,10 +255,10 @@ Query parameters:
 							<li class="menu-item"><a id="action-engine-glmol" class="radio checked">GLmol</a></li>
 							<li class="menu-item"><a id="action-engine-jmol" class="radio">Jmol</a></li>
 							<li class="menu-item"><a id="action-engine-cdw" class="radio">ChemDoodle</a></li>
-							<li class="menu-header">Crystallography</li>
+							<!-- <li class="menu-header">Crystallography</li>
 							<li class="menu-item"><a id="action-cif-unit-cell">Load unit cell</a></li>
 							<li class="menu-item"><a id="action-cif-cubic-supercell">Load 2&times;2&times;2 supercell</a></li>
-							<li class="menu-item"><a id="action-cif-flat-supercell">Load 1&times;3&times;3 supercell</a></li>
+							<li class="menu-item"><a id="action-cif-flat-supercell">Load 1&times;3&times;3 supercell</a></li> -->
 						</ul>
 					</li>
 					<!-- <li id="protein-dropdown" class="dropdown">
@@ -444,7 +444,7 @@ Query parameters:
 							</div>
 							<table id="common-chem-props">
 								<tr id="prop-formula-wrapper"><td>Formula</td><td id="prop-formula" class="chemprop"></td></tr>
-								<tr id="prop-mw-wrapper"><td>Molecular weight</td><td id="prop-mw" class="chemprop"></td></tr>
+								<tr id="prop-mw-wrapper"><td>Molecular analysis software weight</td><td id="prop-mw" class="chemprop"></td></tr>
 								<tr id="prop-donors-wrapper"><td>Hydrogen bond donors</td><td id="prop-donors" class="chemprop"></td></tr>
 								<tr id="prop-acceptors-wrapper"><td>Hydrogen bond acceptors</td><td id="prop-acceptors" class="chemprop"></td></tr>
 							</table>
@@ -511,11 +511,15 @@ Query parameters:
 			<div id="dialog-click-area">
 				<div id="dialog-wrapper">
 					<div class="dialog" id="start-dialog">
-						<img id="welcome-logo" src="img/logo.svg" style="width: 244px" alt="" />
-						<h2 style="font-size: 16px;color:#60606F">An open source project powered by Milvus.</h2>
-						<div id="welcome-loading-msg" style="font-size:20px">LOADING&hellip;</div>
+						<img id="welcome-logo" src="img/logo.svg" style="width: 244px; margin: 10px 0" alt="" />
+						<p style="font-size: 20px; font-weight: 500; width:260px;margin: 20px 0">An open source molecular analysis software</p>
+						<div id="welcome-loading-msg" style="font-size:20px">
+							<img src="img/loading.svg">
+							LOADING
+						</div>
 						<div id="welcome-button-bar" class="btn-group" style="display: none;">
-							<button class="btn close btn-large btn-primary" >Close</button>
+							<img src="img/arrow-right.svg">
+							<button class="btn close btn-large btn-primary" >ENTER</button>
 						</div>
 						<!-- <img id="welcome-mark" src="img/mark.svg" alt="MolView" />
 						<a id="agpl-logo-wrapper" target="_blank" href="http://github.com/molview">
@@ -676,7 +680,7 @@ Query parameters:
 								<h4>Information card</h4>
 								<p>This collects and displays information about the structural formula.</p>
 								<h4>Spectroscopy</h4>
-								<p>This shows a new layer where you can view molecular spectra of the current structural formula (loaded from the Sketcher) More details are covered in the Spectroscopy chapter.</p>
+								<p>This shows a new layer where you can view molecular analysis software spectra of the current structural formula (loaded from the Sketcher) More details are covered in the Spectroscopy chapter.</p>
 								<h4>3D model resource</h4>
 								<p>This redirects you to the web-page for the current 3D model on the website of its source database (except when the model is resolved using the Chemical Identifier Resolver)</p>
 								<h4>Advanced search</h4>
@@ -691,7 +695,7 @@ Query parameters:
 						<div class="expandable">
 							<div class="expandable-title"><span>Spectroscopy</span></div>
 							<div class="expandable-content">
-								<p>You can open the Spectroscopy view via <b>Tools > Spectroscopy</b>. You can view three kinds of molecular spectra.</p>
+								<p>You can open the Spectroscopy view via <b>Tools > Spectroscopy</b>. You can view three kinds of molecular analysis software spectra.</p>
 								<ol>
 									<li>Mass spectrum</li>
 									<li>IR spectrum</li>
@@ -774,7 +778,7 @@ Query parameters:
 								<h4>Calculations</h4>
 								<p>You can perform the following Jmol calculations in Jmol:</p>
 								<ul>
-									<li><b>MEP surface lucent/opaque:</b> calculates and projects molecular electrostatic potential on a translucent or opaque van der Waals surface</li>
+									<li><b>MEP surface lucent/opaque:</b> calculates and projects molecular analysis software electrostatic potential on a translucent or opaque van der Waals surface</li>
 									<li><b>Charge:</b> calculates and projects atomic charge as text label and white to atom color gradient</li>
 									<li><b>Bond dipoles:</b> calculates and draws individual bond dipoles</li>
 									<li><b>Overall dipole:</b> calculates and draws net bond dipole</li>
