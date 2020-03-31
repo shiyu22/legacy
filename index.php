@@ -612,7 +612,8 @@ Query parameters:
 						?>
 						<!-- <p>Download PDF: <a class="link" href="docs/manual.pdf" target="_blank">docs/manual.pdf</a></p>
 						<p>Click one of the subjects below to learn more. You can also watch some videos on <a class="link" target="_blank" title="YouTube Channel" href="https://www.youtube.com/channel/UCRP9nXCC59TMlqc-bk1mi3A">YouTube</a> to get started.</p> -->
-						<h3>Subjects</h3>
+						<h3>MolSearch Version 0.1.0</h3>
+                                                <h3>Subjects</h3>
 						<div class="expandable">
 							<div class="expandable-title"><span>Drawing structural formulas</span></div>
 							<div class="expandable-content">
