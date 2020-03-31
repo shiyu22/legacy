@@ -300,7 +300,8 @@ Query parameters:
 							<li class="menu-item"><a id="action-jmol-measure-torsion" class="jmol-script jmol-picking radio">Torsion</a></li>
 						</ul>
 					</li>
-					<li style="font-weight: bold; position:absolute; right: 20px"><a id="action-help">?</a></li>
+					<li class="dropdown"><a id="action-help" style="padding: 10px 15px;height: 20px;line-height: 20px;z-index: 1;
+    display: block;">Help</a></li>
 				</ul>
 			</div>
 		</div>
