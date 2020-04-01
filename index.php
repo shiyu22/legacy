@@ -310,7 +310,6 @@ Query parameters:
 				<!-- Dynamic onload layout -->
 				<script type="text/javascript">
 					MolView.query = getQuery();
-
 					if(localStorage && localStorage["molview.theme"])
 					{
 						MolView.setTheme(localStorage["molview.theme"]);
@@ -821,5 +820,10 @@ Query parameters:
 			</div>
 		</div>
 	</body>
+	<script>
+		if(window.location.search.includes("startDialog=false")){
+			$("#dialog-overlay").hide()
+		}
+	</script>
 </html>
 
