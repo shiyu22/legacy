@@ -94,7 +94,7 @@ var SearchGrid = {
 			if (!data) return;
 
 			var result = $('<a class="search-result search-result-pubchem"></a>')
-				.attr("href", "?q=" + data + "&startDialog=false")
+				.attr("href", "?smiles=" + data + "&startDialog=false")
 				.appendTo("#search-layer .container");
 
 			if (data) {
