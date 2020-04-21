@@ -284,9 +284,9 @@ var Request = {
 				primary: true,
 				dataType: "json",
 				url: query === "smiles" ?//use URL parameter for SMILES
-					"http://127.0.0.1:5000/api/v1/search?Molecular="
+					"http://116.228.99.250:5000/api/v1/search?Molecular="
 						+ value +"&Type=" + type:
-					"http://127.0.0.1:5000/api/v1/search?Cid="
+					"http://116.228.99.250:5000/api/v1/search?Cid="
 						+ value +"&Type=" + type,
 				/*
 				url: query === "smiles" ?//use URL parameter for SMILES
@@ -705,7 +705,7 @@ var Request = {
 			AJAX({
 				primary: true,
 				dataType: "text",
-				url: "https://molview.org/api/cod/cif/" + codid + ".cif",
+				url: Request.API_ROOT + "api/cod/cif/" + codid + ".cif",
 				defaultError: error,
 				success: success
 			});

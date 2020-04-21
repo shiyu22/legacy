@@ -30,12 +30,7 @@ error_reporting(0);
 parse_str($_SERVER["QUERY_STRING"]);
 header("Content-Type: text");
 
-//allow embed.molview.org and molview.org
-$origin = $_SERVER["HTTP_ORIGIN"];
-if($origin == 'http://molview.org' || $origin == 'https://embed.molview.org')
-{
-	header("Access-Control-Allow-Origin: ".$origin);
-}
+Access-Control-Allow-Origin: *
 
 //connect to cod
 $cod = new mysqli("www.crystallography.net", "cod_reader", "", "cod");
