@@ -385,7 +385,7 @@ var Request = {
 		* @param {String}   smiles  Input Name string
 		* @param {Function} success
 		* @param {Function} error
-		*
+		*/
 		nameToCID: function(name, success, error)
 		{
 			AJAX({
