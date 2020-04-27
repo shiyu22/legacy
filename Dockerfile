@@ -1,9 +1,11 @@
 #docker build -f Dockerfile.os.build -t molsearch:base .
 FROM ubuntu:18.04
 
+ENV DEBIAN_FRONTEND=noninteractive
 RUN sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list
 
 RUN apt-get update
+RUN apt-get install -y git
 RUN apt-get install -y nginx php-fpm
 RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
 RUN sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.2/fpm/php-fpm.conf
@@ -13,6 +15,8 @@ RUN apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:inkscape.dev/stable
 RUN apt update
 RUN apt-get -y install inkscape
+RUN apt-get -y install wget
+RUN apt-get -y install unzip
 
 RUN apt-get -y install imagemagick && \
   apt-get -y install nodejs && \
